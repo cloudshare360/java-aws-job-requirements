@@ -10,7 +10,7 @@
 **Complete Interview Preparation Guide for Senior Java Developer Positions**  
 *Banking & Financial Services Focus*
 
-[📚 Quick Start](#-quick-start) • [🎓 Study Guide](#-study-roadmap) • [💼 Interview Questions](#-interview-questions) • [🏦 Banking Focus](#-banking--financial-services-focus)
+[📚 Quick Start](#-quick-start) • [🎓 Study Guide](#-study-roadmap) • [💼 Interview Questions](#-interview-questions) • [🏦 Banking Focus](#-banking--financial-services-focus) • [📑 Full Index](INDEX.md)
 
 </div>
 
@@ -27,6 +27,8 @@
 - [Interview Questions](#-interview-questions)
 - [Banking Focus](#-banking--financial-services-focus)
 - [Resources](#-resources)
+
+**📑 [Complete Repository Index →](INDEX.md)** - Full navigation guide to all content
 
 ---
 
