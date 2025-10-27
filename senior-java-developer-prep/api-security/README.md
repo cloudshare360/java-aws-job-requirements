@@ -1,7 +1,35 @@
-# API Security for Banking & Financial Services
+# 🔒 API Security for Banking & Financial Services
+
+[← Back to Main](../../README.md) | [← Previous: Spring Boot](../spring-boot-microservices/README.md) | [Next: Kubernetes →](../cloud-kubernetes-openshift/README.md)
+
+---
+
+## 📋 Table of Contents
+
+- [Banking Security Requirements](#banking-security-requirements)
+- [mTLS Implementation](#mtls-mutual-tls-implementation)
+- [JWT Authentication](#jwt-authentication)
+- [OAuth2 Integration](#oauth2-integration)
+- [Rate Limiting](#rate-limiting)
+- [Input Validation](#input-validation)
+- [Audit Logging](#audit-logging)
+- [Data Encryption](#data-encryption)
+- [PII Protection](#pii-protection)
+- [Interview Questions](#interview-questions)
+
+---
 
 ## Overview
+
 This section covers API security patterns, authentication mechanisms, and compliance requirements specific to banking institutions like Wells Fargo, Chase, Bank of America, and other financial services organizations.
+
+**What You'll Learn:**
+- ✅ mTLS (Mutual TLS) implementation
+- ✅ JWT token generation and validation
+- ✅ OAuth2 flows for banking
+- ✅ Rate limiting strategies
+- ✅ PCI-DSS compliance
+- ✅ Audit logging for SOX compliance
 
 ---
 

@@ -1,7 +1,39 @@
-# Cloud, Kubernetes & OpenShift
+# ⚓ Cloud, Kubernetes & OpenShift
+
+[← Back to Main](../../README.md) | [← Previous: API Security](../api-security/README.md) | [Next: Java Fundamentals →](../java-fundamentals/README.md)
+
+---
+
+## 📋 Table of Contents
+
+- [Kubernetes Fundamentals](#kubernetes-fundamentals)
+  - [Pods](#pods)
+  - [Deployments](#deployments)
+  - [Services](#services)
+- [Resource Management](#resource-management)
+  - [CPU and Memory Limits](#cpu-and-memory-limits)
+  - [Resource Requests](#resource-requests)
+- [Health Checks](#health-checks)
+  - [Liveness Probes](#liveness-probes)
+  - [Readiness Probes](#readiness-probes)
+- [OpenShift Specifics](#openshift-specifics)
+- [Deployment Strategies](#deployment-strategies)
+- [kubectl Commands](#kubectl-commands)
+- [Banking Use Cases](#banking-use-cases)
+
+---
 
 ## Overview
+
 This section covers container orchestration, Kubernetes concepts, and OpenShift deployment strategies for financial services microservices.
+
+**What You'll Learn:**
+- ✅ Kubernetes pod management
+- ✅ Deployment and scaling strategies
+- ✅ Resource limits (CPU/Memory)
+- ✅ Health checks (liveness/readiness)
+- ✅ OpenShift-specific features
+- ✅ High availability for banking apps
 
 ---
 

@@ -1,7 +1,37 @@
-# Spring Boot Microservices
+# 🍃 Spring Boot Microservices
+
+[← Back to Main](../../README.md) | [Next: API Security →](../api-security/README.md)
+
+---
+
+## 📋 Table of Contents
+
+- [Spring Boot Configuration](#spring-boot-configuration)
+  - [Application Profiles](#application-profiles)
+  - [Environment Properties](#environment-properties)
+- [Spring Annotations](#spring-annotations)
+  - [JPA Annotations](#jpa-annotations)
+  - [Configuration Annotations](#configuration-annotations)
+- [Spring Security](#spring-security)
+- [Interceptors vs Filters](#interceptors-vs-filters)
+- [Exception Handling](#exception-handling)
+- [REST API Design](#rest-api-design)
+- [Microservices Patterns](#microservices-patterns)
+- [Banking Best Practices](#banking-best-practices)
+
+---
 
 ## Overview
-This section covers Spring Boot framework concepts essential for building microservices in financial services environments.
+
+This section covers Spring Boot framework concepts essential for building microservices in financial services environments like Wells Fargo, JPMorgan Chase, and Bank of America.
+
+**What You'll Learn:**
+- ✅ Spring Boot configuration and profiles
+- ✅ Spring Security implementation
+- ✅ JPA entity mapping
+- ✅ Interceptors vs Filters
+- ✅ REST API best practices
+- ✅ Microservices patterns for banking
 
 ---
 

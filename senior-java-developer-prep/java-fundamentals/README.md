@@ -1,7 +1,35 @@
-# Java Fundamentals for Banking Applications
+# ☕ Java Fundamentals for Banking Applications
+
+[← Back to Main](../../README.md) | [← Previous: Kubernetes](../cloud-kubernetes-openshift/README.md) | [Next: CI/CD →](../cicd-devops/README.md)
+
+---
+
+## 📋 Table of Contents
+
+- [Java Streams API](#java-streams-api)
+  - [Transaction Processing](#transaction-processing)
+  - [Account Management](#account-management)
+  - [Fraud Detection](#fraud-detection)
+- [Collections Framework](#collections-framework)
+- [Optional Class](#optional-class)
+- [Lambda Expressions](#lambda-expressions)
+- [Concurrency](#concurrency)
+- [BigDecimal for Financial Calculations](#bigdecimal-for-financial-calculations)
+- [Interview Questions](#interview-questions)
+
+---
 
 ## Overview
+
 This section covers core Java concepts with real-world banking and financial services use cases from institutions like Wells Fargo, Chase, Bank of America, and other major banks.
+
+**What You'll Learn:**
+- ✅ Java Streams API for transaction processing
+- ✅ Collections framework best practices
+- ✅ BigDecimal for money calculations
+- ✅ Concurrency for high-volume systems
+- ✅ Optional for null safety
+- ✅ Lambda expressions and functional programming
 
 ---
 

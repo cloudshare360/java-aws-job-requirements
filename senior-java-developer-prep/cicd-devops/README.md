@@ -1,7 +1,37 @@
-# CI/CD & DevOps for Banking Applications
+# 🚀 CI/CD & DevOps for Banking Applications
+
+[← Back to Main](../../README.md) | [← Previous: Java Fundamentals](../java-fundamentals/README.md) | [Next: Interview Questions →](../interview-questions/README.md)
+
+---
+
+## 📋 Table of Contents
+
+- [Jenkins Pipeline](#jenkins-pipeline)
+  - [Declarative Pipeline](#declarative-pipeline-for-banking-app)
+  - [Security Scanning](#security-scanning)
+  - [Deployment Stages](#deployment-stages)
+- [GitHub Actions](#github-actions)
+  - [Workflow Configuration](#github-actions-workflow)
+  - [Secrets Management](#secrets-management)
+- [Deployment Strategies](#deployment-strategies)
+  - [Blue-Green Deployment](#blue-green-deployment)
+  - [Canary Deployment](#canary-deployment)
+- [Banking Compliance](#banking-compliance-in-cicd)
+- [Best Practices](#best-practices)
+
+---
 
 ## Overview
+
 CI/CD practices for Spring Boot microservices in banking environments (Wells Fargo, Chase, Bank of America).
+
+**What You'll Learn:**
+- ✅ Jenkins declarative pipelines
+- ✅ GitHub Actions workflows
+- ✅ Security scanning (SAST, DAST)
+- ✅ Deployment strategies for banking
+- ✅ Secrets management
+- ✅ Compliance requirements in CI/CD
 
 ---
 

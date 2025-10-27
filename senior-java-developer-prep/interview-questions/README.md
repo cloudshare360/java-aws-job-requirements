@@ -1,4 +1,36 @@
-# Interview Questions - Senior Java Developer (Banking)
+# 💬 Interview Questions - Senior Java Developer (Banking)
+
+[← Back to Main](../../README.md) | [← Previous: CI/CD](../cicd-devops/README.md)
+
+---
+
+## 📋 Table of Contents
+
+- [Spring Boot & Microservices](#spring-boot--microservices) (10 questions)
+- [API Security](#api-security) (10 questions)
+- [Kubernetes & OpenShift](#kubernetes--openshift) (10 questions)
+- [Java Fundamentals](#java-fundamentals) (10 questions)
+- [Banking Domain](#banking-domain) (10 questions)
+- [CI/CD & DevOps](#cicd--devops) (5 questions)
+- [Scenario-Based Questions](#scenario-based-questions) (10 questions)
+- [Quick Fire Round](#quick-fire-round) (15 questions)
+- [Behavioral Questions](#behavioral-questions)
+- [Questions to Ask Interviewer](#questions-to-ask-the-interviewer)
+
+---
+
+## Overview
+
+This section contains **55+ interview questions** with detailed answers, covering all aspects of Senior Java Developer roles in banking and financial services.
+
+**Categories:**
+- ✅ Technical questions with code examples
+- ✅ Banking domain-specific scenarios
+- ✅ System design questions
+- ✅ Behavioral questions
+- ✅ Questions to ask your interviewer
+
+---
 
 ## Spring Boot & Microservices
 
