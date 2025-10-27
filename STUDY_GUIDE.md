@@ -1,8 +1,36 @@
 # 📚 Complete Study Guide - Senior Java Developer (Banking)
 
+[← Back to Main](README.md) | [Quick Reference →](CHEAT_SHEET.md) | [Complete Index →](INDEX.md)
+
+---
+
+## 📋 Table of Contents
+
+- [Overview](#-overview)
+- [Skill Assessment](#-skill-assessment)
+- [6-Week Study Plan](#️-6-week-study-plan)
+  - [Week 1: Spring Boot Fundamentals](#week-1-spring-boot-fundamentals)
+  - [Week 2: Microservices & REST APIs](#week-2-microservices--rest-apis)
+  - [Week 3: API Security](#week-3-api-security)
+  - [Week 4: Java Fundamentals](#week-4-java-fundamentals)
+  - [Week 5: Kubernetes & OpenShift](#week-5-kubernetes--openshift)
+  - [Week 6: CI/CD & Interview Prep](#week-6-cicd--interview-prep)
+- [Daily Study Routine](#-daily-study-routine)
+- [Practice Projects](#-practice-projects)
+- [Progress Tracking](#-progress-tracking)
+- [Mock Interview Preparation](#-mock-interview-preparation)
+
+---
+
 ## 🎯 Overview
 
 This study guide provides a structured approach to preparing for Senior Java Developer interviews at major banking institutions. Follow this guide sequentially or jump to specific topics based on your needs.
+
+**Quick Links:**
+- 📖 [Main README](README.md) - Repository overview
+- 📑 [Complete Index](INDEX.md) - All documentation
+- 🚀 [Cheat Sheet](CHEAT_SHEET.md) - Quick reference
+- 💬 [Interview Questions](senior-java-developer-prep/interview-questions/README.md) - 55+ Q&A
 
 ---
 
@@ -26,66 +54,133 @@ Before starting, assess your current knowledge level:
 
 ### Week 1: Spring Boot Fundamentals
 
+**📚 Main Guide:** [Spring Boot Microservices →](senior-java-developer-prep/spring-boot-microservices/README.md)
+
+**Week Overview:**
+- Days 1-2: Configuration & Profiles
+- Days 3-4: Spring Security
+- Days 5-6: JPA & Database
+- Day 7: Review & Practice
+
+**Total Time:** 24-32 hours
+
+---
+
 #### Day 1-2: Configuration & Profiles
-- [ ] Read: [Spring Boot Configuration](senior-java-developer-prep/spring-boot-microservices/README.md#spring-boot-configuration)
-- [ ] Practice: Create multi-profile application (dev, test, prod)
-- [ ] Exercise: Externalize database credentials using environment variables
-- [ ] Quiz: Answer 5 configuration-related interview questions
+
+**📖 Reading Materials:**
+- [ ] [Spring Boot Configuration](senior-java-developer-prep/spring-boot-microservices/README.md#spring-boot-configuration)
+- [ ] [Application Profiles](senior-java-developer-prep/spring-boot-microservices/README.md#application-profiles)
+- [ ] [Environment Properties](senior-java-developer-prep/spring-boot-microservices/README.md#environment-properties)
+- [ ] [Cheat Sheet: Spring Boot](CHEAT_SHEET.md#spring-boot)
+
+**✏️ Practice Tasks:**
+- [ ] Create multi-profile application (dev, test, prod)
+- [ ] Externalize database credentials using environment variables
+- [ ] Configure different ports for each profile
+- [ ] Practice profile activation methods
+
+**❓ Quiz:**
+- [ ] Answer 5 configuration-related [interview questions](senior-java-developer-prep/interview-questions/README.md#spring-boot--microservices)
 
 **Key Concepts:**
 - `application.properties` vs `application.yml`
-- Profile activation methods
+- Profile activation methods (4 ways)
 - Property precedence order
-- Environment variable injection
+- Environment variable injection with `${}`
+
+**📝 Quick Reference:** [Spring Boot Config Cheat Sheet](CHEAT_SHEET.md#configuration--profiles)
 
 **Time Required:** 4-6 hours
 
 ---
 
 #### Day 3-4: Spring Security
-- [ ] Read: [Spring Security Implementation](senior-java-developer-prep/spring-boot-microservices/README.md#spring-security)
-- [ ] Practice: Implement JWT authentication
-- [ ] Exercise: Create role-based access control (RBAC)
-- [ ] Quiz: Answer 5 security-related interview questions
+
+**📖 Reading Materials:**
+- [ ] [Spring Security Implementation](senior-java-developer-prep/spring-boot-microservices/README.md#spring-security)
+- [ ] [JWT Authentication](senior-java-developer-prep/api-security/README.md#jwt-authentication)
+- [ ] [Security Best Practices](senior-java-developer-prep/api-security/README.md#banking-security-requirements)
+- [ ] [Cheat Sheet: Spring Security](CHEAT_SHEET.md#spring-security)
+
+**✏️ Practice Tasks:**
+- [ ] Implement JWT authentication
+- [ ] Create role-based access control (RBAC)
+- [ ] Configure SecurityFilterChain
+- [ ] Implement UserDetailsService
+
+**❓ Quiz:**
+- [ ] Answer 5 security-related [interview questions](senior-java-developer-prep/interview-questions/README.md#api-security)
 
 **Key Concepts:**
 - Authentication vs Authorization
 - SecurityFilterChain configuration
 - UserDetailsService implementation
 - Password encoding (BCrypt)
+- JWT token generation and validation
+
+**📝 Quick Reference:** [Security Config Cheat Sheet](CHEAT_SHEET.md#basic-configuration)
 
 **Time Required:** 6-8 hours
 
 ---
 
 #### Day 5-6: JPA & Database
-- [ ] Read: [JPA Annotations](senior-java-developer-prep/spring-boot-microservices/README.md#jpa-annotations)
-- [ ] Practice: Create entity relationships (OneToMany, ManyToMany)
-- [ ] Exercise: Implement repository with custom queries
-- [ ] Quiz: Answer 5 JPA-related interview questions
+
+**📖 Reading Materials:**
+- [ ] [JPA Annotations](senior-java-developer-prep/spring-boot-microservices/README.md#jpa-annotations)
+- [ ] [Entity Relationships](senior-java-developer-prep/spring-boot-microservices/README.md#spring-annotations)
+- [ ] [Banking Data Models](senior-java-developer-prep/java-fundamentals/README.md#bigdecimal-for-financial-calculations)
+- [ ] [Cheat Sheet: JPA](CHEAT_SHEET.md#jpa-annotations)
+
+**✏️ Practice Tasks:**
+- [ ] Create entity relationships (OneToMany, ManyToMany)
+- [ ] Implement repository with custom queries
+- [ ] Use BigDecimal for money fields
+- [ ] Configure transaction management
+
+**❓ Quiz:**
+- [ ] Answer 5 JPA-related [interview questions](senior-java-developer-prep/interview-questions/README.md#spring-boot--microservices)
 
 **Key Concepts:**
-- Entity mapping annotations
-- Relationship types
+- Entity mapping annotations (@Entity, @Table, @Column)
+- Relationship types (@OneToMany, @ManyToOne, @ManyToMany)
 - Cascade operations
-- Transaction management
+- Transaction management with @Transactional
+- BigDecimal for financial data
+
+**📝 Quick Reference:** [JPA Annotations Cheat Sheet](CHEAT_SHEET.md#jpa-annotations)
 
 **Time Required:** 6-8 hours
 
 ---
 
 #### Day 7: Review & Practice
-- [ ] Build mini-project: Simple banking account service
-- [ ] Review all Week 1 concepts
-- [ ] Practice explaining concepts out loud
-- [ ] Take practice quiz (20 questions)
 
-**Mini-Project Requirements:**
-- Account creation endpoint
-- Balance inquiry endpoint
-- Transaction history endpoint
-- JWT authentication
-- Profile-based configuration
+**📖 Review Materials:**
+- [ ] Review [Week 1 concepts](senior-java-developer-prep/spring-boot-microservices/README.md)
+- [ ] Review [Spring Boot Cheat Sheet](CHEAT_SHEET.md#spring-boot)
+- [ ] Practice [Spring Boot interview questions](senior-java-developer-prep/interview-questions/README.md#spring-boot--microservices)
+
+**✏️ Mini-Project: Banking Account Service**
+
+Build a simple Spring Boot application with:
+- [ ] Account creation endpoint (POST /api/accounts)
+- [ ] Balance inquiry endpoint (GET /api/accounts/{id}/balance)
+- [ ] Transaction history endpoint (GET /api/accounts/{id}/transactions)
+- [ ] JWT authentication
+- [ ] Profile-based configuration (dev, prod)
+- [ ] JPA entities with relationships
+- [ ] Exception handling with @ControllerAdvice
+
+**❓ Self-Assessment:**
+- [ ] Take practice quiz (20 questions)
+- [ ] Explain concepts out loud
+- [ ] Review weak areas
+
+**📝 Resources:**
+- [Spring Boot Guide](senior-java-developer-prep/spring-boot-microservices/README.md)
+- [Code Examples](CHEAT_SHEET.md#spring-boot)
 
 **Time Required:** 4-6 hours
 
@@ -93,59 +188,128 @@ Before starting, assess your current knowledge level:
 
 ### Week 2: Microservices & REST APIs
 
+**📚 Main Guide:** [Spring Boot Microservices →](senior-java-developer-prep/spring-boot-microservices/README.md)
+
+**Week Overview:**
+- Days 8-9: REST API Design
+- Days 10-11: Interceptors & Filters
+- Days 12-13: Exception Handling
+- Day 14: Review & Practice
+
+**Total Time:** 16-24 hours
+
+---
+
 #### Day 8-9: REST API Design
-- [ ] Read: [REST API Best Practices](senior-java-developer-prep/spring-boot-microservices/README.md#rest-api-design)
-- [ ] Practice: Implement CRUD operations
-- [ ] Exercise: Understand POST vs PUT vs PATCH
-- [ ] Quiz: Answer 5 REST API questions
+
+**📖 Reading Materials:**
+- [ ] [REST API Best Practices](senior-java-developer-prep/spring-boot-microservices/README.md#rest-api-design)
+- [ ] [POST vs PUT](senior-java-developer-prep/api-security/README.md)
+- [ ] [HTTP Status Codes](CHEAT_SHEET.md#status-codes)
+- [ ] [API Design Patterns](senior-java-developer-prep/spring-boot-microservices/README.md)
+
+**✏️ Practice Tasks:**
+- [ ] Implement CRUD operations for banking entities
+- [ ] Understand POST vs PUT vs PATCH differences
+- [ ] Design RESTful endpoints with proper naming
+- [ ] Implement proper HTTP status codes
+
+**❓ Quiz:**
+- [ ] Answer 5 REST API [interview questions](senior-java-developer-prep/interview-questions/README.md#api-security)
 
 **Key Concepts:**
-- HTTP methods and status codes
-- Idempotency
+- HTTP methods (GET, POST, PUT, PATCH, DELETE)
+- Status codes (200, 201, 204, 400, 401, 404, 500)
+- Idempotency (PUT is idempotent, POST is not)
 - Resource naming conventions
 - Error response structure
+
+**📝 Quick Reference:** [REST API Cheat Sheet](CHEAT_SHEET.md#rest-api)
 
 **Time Required:** 4-6 hours
 
 ---
 
 #### Day 10-11: Interceptors & Filters
-- [ ] Read: [Interceptors vs Filters](senior-java-developer-prep/spring-boot-microservices/README.md#interceptors-vs-filters)
-- [ ] Practice: Create logging interceptor
-- [ ] Exercise: Implement request validation filter
-- [ ] Quiz: Answer 5 interceptor/filter questions
+
+**📖 Reading Materials:**
+- [ ] [Interceptors vs Filters](senior-java-developer-prep/spring-boot-microservices/README.md#interceptors-vs-filters)
+- [ ] [Filter Implementation](CHEAT_SHEET.md#interceptor-vs-filter)
+- [ ] [Request Processing](senior-java-developer-prep/spring-boot-microservices/README.md)
+
+**✏️ Practice Tasks:**
+- [ ] Create logging interceptor for audit trails
+- [ ] Implement request validation filter
+- [ ] Understand execution order
+- [ ] Add authentication filter
+
+**❓ Quiz:**
+- [ ] Answer 5 interceptor/filter [interview questions](senior-java-developer-prep/interview-questions/README.md#spring-boot--microservices)
 
 **Key Concepts:**
-- Execution order
-- Use cases for each
-- HandlerInterceptor interface
-- Filter chain
+- Filter: Servlet API, executes before/after servlet
+- Interceptor: Spring MVC, executes before/after controller
+- Execution order: Filter → Interceptor → Controller
+- Use cases: Filter for security, Interceptor for business logic
+- HandlerInterceptor interface methods
+
+**📝 Quick Reference:** [Interceptor vs Filter Cheat Sheet](CHEAT_SHEET.md#interceptor-vs-filter)
 
 **Time Required:** 4-6 hours
 
 ---
 
 #### Day 12-13: Exception Handling
-- [ ] Read: [Global Exception Handling](senior-java-developer-prep/spring-boot-microservices/README.md#exception-handling)
-- [ ] Practice: Create @ControllerAdvice
-- [ ] Exercise: Implement custom exceptions
-- [ ] Quiz: Answer 5 exception handling questions
+
+**📖 Reading Materials:**
+- [ ] [Global Exception Handling](senior-java-developer-prep/spring-boot-microservices/README.md#exception-handling)
+- [ ] [Exception Handling Examples](CHEAT_SHEET.md#exception-handling)
+- [ ] [Error Response Patterns](senior-java-developer-prep/api-security/README.md)
+
+**✏️ Practice Tasks:**
+- [ ] Create @ControllerAdvice for global exception handling
+- [ ] Implement custom exceptions (PaymentException, AccountNotFoundException)
+- [ ] Design error response structure
+- [ ] Handle validation errors
+
+**❓ Quiz:**
+- [ ] Answer 5 exception handling [interview questions](senior-java-developer-prep/interview-questions/README.md#spring-boot--microservices)
 
 **Key Concepts:**
-- @ControllerAdvice
-- @ExceptionHandler
+- @ControllerAdvice for global exception handling
+- @ExceptionHandler for specific exceptions
 - ResponseEntityExceptionHandler
-- Custom error responses
+- Custom error responses with timestamp, message, details
+- Validation error handling
+
+**📝 Quick Reference:** [Exception Handling Cheat Sheet](CHEAT_SHEET.md#exception-handling)
 
 **Time Required:** 4-6 hours
 
 ---
 
 #### Day 14: Review & Practice
-- [ ] Enhance mini-project with exception handling
-- [ ] Add request/response logging
-- [ ] Implement API versioning
+
+**📖 Review Materials:**
+- [ ] Review [Week 2 concepts](senior-java-developer-prep/spring-boot-microservices/README.md)
+- [ ] Review [REST API Cheat Sheet](CHEAT_SHEET.md#rest-api)
+- [ ] Practice [API interview questions](senior-java-developer-prep/interview-questions/README.md#api-security)
+
+**✏️ Enhancement Tasks:**
+- [ ] Enhance mini-project with global exception handling
+- [ ] Add request/response logging interceptor
+- [ ] Implement API versioning (v1, v2)
+- [ ] Add input validation with @Valid
+- [ ] Create custom error responses
+
+**❓ Self-Assessment:**
 - [ ] Review all Week 2 concepts
+- [ ] Explain REST principles out loud
+- [ ] Practice API design scenarios
+
+**📝 Resources:**
+- [Spring Boot Guide](senior-java-developer-prep/spring-boot-microservices/README.md)
+- [API Security Guide](senior-java-developer-prep/api-security/README.md)
 
 **Time Required:** 4-6 hours
 
@@ -153,59 +317,130 @@ Before starting, assess your current knowledge level:
 
 ### Week 3: API Security
 
+**📚 Main Guide:** [API Security →](senior-java-developer-prep/api-security/README.md)
+
+**Week Overview:**
+- Days 15-16: mTLS Implementation
+- Days 17-18: JWT & OAuth2
+- Days 19-20: Rate Limiting & Validation
+- Day 21: Review & Practice
+
+**Total Time:** 20-28 hours
+
+---
+
 #### Day 15-16: mTLS Implementation
-- [ ] Read: [mTLS Guide](senior-java-developer-prep/api-security/README.md#mtls-mutual-tls-implementation)
-- [ ] Practice: Configure mTLS in Spring Boot
-- [ ] Exercise: Generate and manage certificates
-- [ ] Quiz: Answer 5 mTLS questions
+
+**📖 Reading Materials:**
+- [ ] [mTLS Guide](senior-java-developer-prep/api-security/README.md#mtls-mutual-tls-implementation)
+- [ ] [Banking Security Requirements](senior-java-developer-prep/api-security/README.md#banking-security-requirements)
+- [ ] [Certificate Management](senior-java-developer-prep/api-security/README.md)
+- [ ] [mTLS Cheat Sheet](CHEAT_SHEET.md#banking-concepts)
+
+**✏️ Practice Tasks:**
+- [ ] Configure mTLS in Spring Boot application
+- [ ] Generate keystore and truststore
+- [ ] Understand two-way SSL handshake
+- [ ] Implement certificate validation
+
+**❓ Quiz:**
+- [ ] Answer 5 mTLS [interview questions](senior-java-developer-prep/interview-questions/README.md#api-security)
 
 **Key Concepts:**
-- Certificate-based authentication
-- Keystore and truststore
-- Two-way SSL handshake
-- Certificate lifecycle
+- Certificate-based authentication (client + server certs)
+- Keystore (server certificate) and truststore (trusted client certs)
+- Two-way SSL handshake process
+- Certificate lifecycle management
+- PCI-DSS compliance requirements
+
+**📝 Quick Reference:** [mTLS Configuration](CHEAT_SHEET.md#banking-concepts)
 
 **Time Required:** 6-8 hours
 
 ---
 
 #### Day 17-18: JWT & OAuth2
-- [ ] Read: [JWT Authentication](senior-java-developer-prep/api-security/README.md#jwt-authentication)
-- [ ] Practice: Implement JWT token generation
-- [ ] Exercise: Create OAuth2 resource server
-- [ ] Quiz: Answer 5 JWT/OAuth2 questions
+
+**📖 Reading Materials:**
+- [ ] [JWT Authentication](senior-java-developer-prep/api-security/README.md#jwt-authentication)
+- [ ] [OAuth2 Integration](senior-java-developer-prep/api-security/README.md#oauth2-integration)
+- [ ] [Token Security](senior-java-developer-prep/api-security/README.md)
+- [ ] [JWT Cheat Sheet](CHEAT_SHEET.md#spring-security)
+
+**✏️ Practice Tasks:**
+- [ ] Implement JWT token generation and validation
+- [ ] Create OAuth2 resource server
+- [ ] Understand different OAuth2 flows
+- [ ] Implement refresh token mechanism
+
+**❓ Quiz:**
+- [ ] Answer 5 JWT/OAuth2 [interview questions](senior-java-developer-prep/interview-questions/README.md#api-security)
 
 **Key Concepts:**
-- JWT structure (header, payload, signature)
-- Token validation
-- OAuth2 flows
-- Refresh tokens
+- JWT structure (header.payload.signature)
+- Token validation and expiration
+- OAuth2 flows (Authorization Code, Client Credentials)
+- Refresh tokens for long-lived sessions
+- RS256 vs HS256 for banking
+
+**📝 Quick Reference:** [JWT Token Generation](CHEAT_SHEET.md#jwt-token-generation)
 
 **Time Required:** 6-8 hours
 
 ---
 
 #### Day 19-20: Rate Limiting & Validation
-- [ ] Read: [Rate Limiting](senior-java-developer-prep/api-security/README.md#rate-limiting)
-- [ ] Practice: Implement rate limiting with Bucket4j
-- [ ] Exercise: Add input validation
-- [ ] Quiz: Answer 5 validation questions
+
+**📖 Reading Materials:**
+- [ ] [Rate Limiting](senior-java-developer-prep/api-security/README.md#rate-limiting)
+- [ ] [Input Validation](senior-java-developer-prep/api-security/README.md#input-validation)
+- [ ] [Audit Logging](senior-java-developer-prep/api-security/README.md#audit-logging)
+- [ ] [Rate Limiting Cheat Sheet](CHEAT_SHEET.md#banking-concepts)
+
+**✏️ Practice Tasks:**
+- [ ] Implement rate limiting with Bucket4j
+- [ ] Add input validation with @Valid
+- [ ] Create custom validators
+- [ ] Implement audit logging
+
+**❓ Quiz:**
+- [ ] Answer 5 validation [interview questions](senior-java-developer-prep/interview-questions/README.md#api-security)
 
 **Key Concepts:**
-- Token bucket algorithm
-- Sliding window
-- Bean validation (@Valid)
-- Custom validators
+- Token bucket algorithm for rate limiting
+- Sliding window approach
+- Bean validation (@Valid, @NotNull, @Size)
+- Custom validators for banking rules
+- Audit logging for compliance
+
+**📝 Quick Reference:** [Rate Limiting Patterns](CHEAT_SHEET.md#banking-concepts)
 
 **Time Required:** 4-6 hours
 
 ---
 
 #### Day 21: Review & Practice
+
+**📖 Review Materials:**
+- [ ] Review [Week 3 concepts](senior-java-developer-prep/api-security/README.md)
+- [ ] Review [API Security Cheat Sheet](CHEAT_SHEET.md#banking-concepts)
+- [ ] Practice [Security interview questions](senior-java-developer-prep/interview-questions/README.md#api-security)
+
+**✏️ Enhancement Tasks:**
 - [ ] Add mTLS to mini-project
-- [ ] Implement rate limiting
-- [ ] Add comprehensive validation
+- [ ] Implement rate limiting on endpoints
+- [ ] Add comprehensive input validation
+- [ ] Implement audit logging
+- [ ] Add PII masking for sensitive data
+
+**❓ Self-Assessment:**
 - [ ] Review all Week 3 concepts
+- [ ] Explain mTLS handshake process
+- [ ] Practice security scenarios
+
+**📝 Resources:**
+- [API Security Guide](senior-java-developer-prep/api-security/README.md)
+- [Security Cheat Sheet](CHEAT_SHEET.md#banking-concepts)
 
 **Time Required:** 4-6 hours
 
@@ -213,59 +448,130 @@ Before starting, assess your current knowledge level:
 
 ### Week 4: Java Fundamentals
 
+**📚 Main Guide:** [Java Fundamentals →](senior-java-developer-prep/java-fundamentals/README.md)
+
+**Week Overview:**
+- Days 22-23: Streams API
+- Days 24-25: Collections & Concurrency
+- Days 26-27: BigDecimal & Financial Calculations
+- Day 28: Review & Practice
+
+**Total Time:** 24-32 hours
+
+---
+
 #### Day 22-23: Streams API
-- [ ] Read: [Java Streams Guide](senior-java-developer-prep/java-fundamentals/README.md#java-streams-api)
-- [ ] Practice: Solve 10 Stream problems
-- [ ] Exercise: Implement transaction processing with Streams
-- [ ] Quiz: Answer 10 Streams questions
+
+**📖 Reading Materials:**
+- [ ] [Java Streams Guide](senior-java-developer-prep/java-fundamentals/README.md#java-streams-api)
+- [ ] [Transaction Processing Examples](senior-java-developer-prep/java-fundamentals/README.md)
+- [ ] [Fraud Detection Patterns](senior-java-developer-prep/java-fundamentals/README.md)
+- [ ] [Streams Cheat Sheet](CHEAT_SHEET.md#java-streams)
+
+**✏️ Practice Tasks:**
+- [ ] Solve 10 Stream problems on LeetCode
+- [ ] Implement transaction processing with Streams
+- [ ] Create fraud detection algorithm
+- [ ] Practice grouping and aggregation
+
+**❓ Quiz:**
+- [ ] Answer 10 Streams [interview questions](senior-java-developer-prep/interview-questions/README.md#java-fundamentals)
 
 **Key Concepts:**
-- Intermediate operations (map, filter, flatMap)
-- Terminal operations (collect, reduce, forEach)
-- Collectors utility
-- Parallel streams
+- Intermediate operations (map, filter, flatMap, distinct, sorted)
+- Terminal operations (collect, reduce, forEach, count)
+- Collectors utility (toList, groupingBy, partitioningBy)
+- Parallel streams for performance
+- Banking use cases (transaction filtering, aggregation)
+
+**📝 Quick Reference:** [Streams Operations Cheat Sheet](CHEAT_SHEET.md#common-operations)
 
 **Time Required:** 8-10 hours
 
 ---
 
 #### Day 24-25: Collections & Concurrency
-- [ ] Read: [Collections Framework](senior-java-developer-prep/java-fundamentals/README.md#collections-framework)
-- [ ] Practice: Choose right collection for use case
-- [ ] Exercise: Implement thread-safe operations
-- [ ] Quiz: Answer 10 collections/concurrency questions
+
+**📖 Reading Materials:**
+- [ ] [Collections Framework](senior-java-developer-prep/java-fundamentals/README.md#collections-framework)
+- [ ] [Concurrency Patterns](senior-java-developer-prep/java-fundamentals/README.md#concurrency)
+- [ ] [Thread Safety](senior-java-developer-prep/java-fundamentals/README.md)
+- [ ] [Collections Cheat Sheet](CHEAT_SHEET.md#java-streams)
+
+**✏️ Practice Tasks:**
+- [ ] Choose right collection for different use cases
+- [ ] Implement thread-safe operations
+- [ ] Use ExecutorService for async processing
+- [ ] Practice CompletableFuture patterns
+
+**❓ Quiz:**
+- [ ] Answer 10 collections/concurrency [interview questions](senior-java-developer-prep/interview-questions/README.md#java-fundamentals)
 
 **Key Concepts:**
-- List, Set, Map implementations
-- ConcurrentHashMap
-- ExecutorService
-- CompletableFuture
+- List (ArrayList, LinkedList), Set (HashSet, TreeSet), Map (HashMap, TreeMap)
+- ConcurrentHashMap for thread-safe operations
+- ExecutorService for thread pool management
+- CompletableFuture for async operations
+- Thread safety in banking applications
+
+**📝 Quick Reference:** [Collections Cheat Sheet](CHEAT_SHEET.md#java-streams)
 
 **Time Required:** 6-8 hours
 
 ---
 
 #### Day 26-27: BigDecimal & Financial Calculations
-- [ ] Read: [BigDecimal Guide](senior-java-developer-prep/java-fundamentals/README.md#bigdecimal-for-financial-calculations)
-- [ ] Practice: Implement money calculations
-- [ ] Exercise: Handle rounding and precision
-- [ ] Quiz: Answer 5 BigDecimal questions
+
+**📖 Reading Materials:**
+- [ ] [BigDecimal Guide](senior-java-developer-prep/java-fundamentals/README.md#bigdecimal-for-financial-calculations)
+- [ ] [Financial Calculations](senior-java-developer-prep/java-fundamentals/README.md)
+- [ ] [Banking Examples](senior-java-developer-prep/java-fundamentals/README.md)
+- [ ] [BigDecimal Cheat Sheet](CHEAT_SHEET.md#bigdecimal-for-money)
+
+**✏️ Practice Tasks:**
+- [ ] Implement money calculations with BigDecimal
+- [ ] Handle rounding and precision correctly
+- [ ] Practice comparison methods
+- [ ] Implement interest calculations
+
+**❓ Quiz:**
+- [ ] Answer 5 BigDecimal [interview questions](senior-java-developer-prep/interview-questions/README.md#java-fundamentals)
 
 **Key Concepts:**
-- Why not float/double for money
-- Rounding modes
-- Scale and precision
-- Comparison methods
+- Why not float/double for money (precision issues)
+- Rounding modes (HALF_UP, HALF_DOWN, CEILING, FLOOR)
+- Scale and precision management
+- Comparison methods (compareTo, not equals)
+- Banking calculations (interest, fees, balances)
+
+**📝 Quick Reference:** [BigDecimal Cheat Sheet](CHEAT_SHEET.md#bigdecimal-for-money)
 
 **Time Required:** 4-6 hours
 
 ---
 
 #### Day 28: Review & Practice
-- [ ] Refactor mini-project with Streams
-- [ ] Add BigDecimal for all money operations
-- [ ] Implement async processing
+
+**📖 Review Materials:**
+- [ ] Review [Week 4 concepts](senior-java-developer-prep/java-fundamentals/README.md)
+- [ ] Review [Java Cheat Sheet](CHEAT_SHEET.md#java-streams)
+- [ ] Practice [Java interview questions](senior-java-developer-prep/interview-questions/README.md#java-fundamentals)
+
+**✏️ Enhancement Tasks:**
+- [ ] Refactor mini-project with Streams API
+- [ ] Replace all double/float with BigDecimal
+- [ ] Implement async transaction processing
+- [ ] Add fraud detection with Streams
+- [ ] Optimize with parallel streams
+
+**❓ Self-Assessment:**
 - [ ] Review all Week 4 concepts
+- [ ] Explain Stream operations
+- [ ] Practice BigDecimal calculations
+
+**📝 Resources:**
+- [Java Fundamentals Guide](senior-java-developer-prep/java-fundamentals/README.md)
+- [Java Cheat Sheet](CHEAT_SHEET.md#java-streams)
 
 **Time Required:** 4-6 hours
 
@@ -273,59 +579,132 @@ Before starting, assess your current knowledge level:
 
 ### Week 5: Kubernetes & OpenShift
 
+**📚 Main Guide:** [Kubernetes & OpenShift →](senior-java-developer-prep/cloud-kubernetes-openshift/README.md)
+
+**Week Overview:**
+- Days 29-30: Kubernetes Fundamentals
+- Days 31-32: Resource Management & Health Checks
+- Days 33-34: OpenShift & Deployment Strategies
+- Day 35: Review & Practice
+
+**Total Time:** 24-32 hours
+
+---
+
 #### Day 29-30: Kubernetes Fundamentals
-- [ ] Read: [Kubernetes Guide](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#kubernetes-fundamentals)
-- [ ] Practice: Deploy Spring Boot app to K8s
-- [ ] Exercise: Create Deployment and Service
-- [ ] Quiz: Answer 10 Kubernetes questions
+
+**📖 Reading Materials:**
+- [ ] [Kubernetes Guide](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#kubernetes-fundamentals)
+- [ ] [Pods Concepts](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#pods)
+- [ ] [Deployments](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#deployments)
+- [ ] [Kubernetes Cheat Sheet](CHEAT_SHEET.md#kubernetes)
+
+**✏️ Practice Tasks:**
+- [ ] Deploy Spring Boot app to Kubernetes
+- [ ] Create Deployment and Service YAML
+- [ ] Practice kubectl commands
+- [ ] Understand pod lifecycle
+
+**❓ Quiz:**
+- [ ] Answer 10 Kubernetes [interview questions](senior-java-developer-prep/interview-questions/README.md#kubernetes--openshift)
 
 **Key Concepts:**
-- Pods, Deployments, Services
-- kubectl commands
-- YAML manifests
-- Namespaces
+- Pods (smallest deployable unit)
+- Deployments (manage ReplicaSets)
+- Services (ClusterIP, NodePort, LoadBalancer)
+- kubectl commands (get, describe, logs, exec)
+- YAML manifests structure
+- Namespaces for isolation
+
+**📝 Quick Reference:** [Kubernetes Commands Cheat Sheet](CHEAT_SHEET.md#essential-commands)
 
 **Time Required:** 8-10 hours
 
 ---
 
 #### Day 31-32: Resource Management & Health Checks
-- [ ] Read: [Resource Limits](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#resource-management)
-- [ ] Practice: Configure CPU/Memory limits
-- [ ] Exercise: Implement health check endpoints
-- [ ] Quiz: Answer 10 resource management questions
+
+**📖 Reading Materials:**
+- [ ] [Resource Management](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#resource-management)
+- [ ] [Health Checks](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#health-checks)
+- [ ] [Resource Limits](CHEAT_SHEET.md#resource-limits)
+- [ ] [Probes Configuration](senior-java-developer-prep/cloud-kubernetes-openshift/README.md)
+
+**✏️ Practice Tasks:**
+- [ ] Configure CPU/Memory requests and limits
+- [ ] Implement health check endpoints in Spring Boot
+- [ ] Configure liveness and readiness probes
+- [ ] Test pod restart behavior
+
+**❓ Quiz:**
+- [ ] Answer 10 resource management [interview questions](senior-java-developer-prep/interview-questions/README.md#kubernetes--openshift)
 
 **Key Concepts:**
-- Requests vs Limits
-- Liveness probes
-- Readiness probes
-- Startup probes
+- Requests (guaranteed resources) vs Limits (maximum allowed)
+- Liveness probes (restart unhealthy pods)
+- Readiness probes (route traffic when ready)
+- Startup probes (slow-starting containers)
+- Spring Boot Actuator for health endpoints
+
+**📝 Quick Reference:** [Resource Limits Cheat Sheet](CHEAT_SHEET.md#resource-limits)
 
 **Time Required:** 6-8 hours
 
 ---
 
 #### Day 33-34: OpenShift & Deployment Strategies
-- [ ] Read: [OpenShift Guide](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#openshift-specifics)
-- [ ] Practice: Deploy to OpenShift
-- [ ] Exercise: Implement blue-green deployment
-- [ ] Quiz: Answer 5 OpenShift questions
+
+**📖 Reading Materials:**
+- [ ] [OpenShift Guide](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#openshift-specifics)
+- [ ] [Deployment Strategies](senior-java-developer-prep/cloud-kubernetes-openshift/README.md#deployment-strategies)
+- [ ] [Blue-Green Deployment](senior-java-developer-prep/cicd-devops/README.md#deployment-strategies)
+- [ ] [OpenShift vs Kubernetes](senior-java-developer-prep/cloud-kubernetes-openshift/README.md)
+
+**✏️ Practice Tasks:**
+- [ ] Deploy to OpenShift cluster
+- [ ] Implement blue-green deployment
+- [ ] Practice oc commands
+- [ ] Configure Routes
+
+**❓ Quiz:**
+- [ ] Answer 5 OpenShift [interview questions](senior-java-developer-prep/interview-questions/README.md#kubernetes--openshift)
 
 **Key Concepts:**
-- Routes vs Ingress
-- DeploymentConfig
-- BuildConfig
-- ImageStreams
+- Routes (OpenShift) vs Ingress (Kubernetes)
+- DeploymentConfig (OpenShift-specific)
+- BuildConfig for S2I (Source-to-Image)
+- ImageStreams for image management
+- Blue-green and canary deployments
+
+**📝 Quick Reference:** [OpenShift Commands](CHEAT_SHEET.md#kubernetes)
 
 **Time Required:** 6-8 hours
 
 ---
 
 #### Day 35: Review & Practice
+
+**📖 Review Materials:**
+- [ ] Review [Week 5 concepts](senior-java-developer-prep/cloud-kubernetes-openshift/README.md)
+- [ ] Review [Kubernetes Cheat Sheet](CHEAT_SHEET.md#kubernetes)
+- [ ] Practice [K8s interview questions](senior-java-developer-prep/interview-questions/README.md#kubernetes--openshift)
+
+**✏️ Deployment Tasks:**
 - [ ] Deploy mini-project to Kubernetes
-- [ ] Configure resource limits
-- [ ] Add health check endpoints
+- [ ] Configure resource limits (CPU: 500m, Memory: 512Mi)
+- [ ] Add health check endpoints (/actuator/health)
+- [ ] Configure liveness and readiness probes
+- [ ] Test scaling (scale to 3 replicas)
+- [ ] Practice kubectl troubleshooting
+
+**❓ Self-Assessment:**
 - [ ] Review all Week 5 concepts
+- [ ] Explain pod lifecycle
+- [ ] Practice deployment scenarios
+
+**📝 Resources:**
+- [Kubernetes Guide](senior-java-developer-prep/cloud-kubernetes-openshift/README.md)
+- [Deployment YAML](CHEAT_SHEET.md#deployment-yaml)
 
 **Time Required:** 4-6 hours
 
@@ -333,61 +712,148 @@ Before starting, assess your current knowledge level:
 
 ### Week 6: CI/CD & Interview Prep
 
+**📚 Main Guide:** [CI/CD & DevOps →](senior-java-developer-prep/cicd-devops/README.md)
+
+**Week Overview:**
+- Days 36-37: Jenkins Pipelines
+- Days 38-39: GitHub Actions
+- Days 40-41: Interview Questions Review
+- Day 42: Final Review & Mock Interview
+
+**Total Time:** 20-28 hours
+
+---
+
 #### Day 36-37: Jenkins Pipelines
-- [ ] Read: [Jenkins Guide](senior-java-developer-prep/cicd-devops/README.md#jenkins-pipelines)
-- [ ] Practice: Create declarative pipeline
-- [ ] Exercise: Add testing and security scanning
-- [ ] Quiz: Answer 5 Jenkins questions
+
+**📖 Reading Materials:**
+- [ ] [Jenkins Guide](senior-java-developer-prep/cicd-devops/README.md#jenkins-pipeline)
+- [ ] [Declarative Pipeline](senior-java-developer-prep/cicd-devops/README.md)
+- [ ] [Banking Compliance](senior-java-developer-prep/cicd-devops/README.md#banking-compliance-in-cicd)
+- [ ] [Jenkins Cheat Sheet](CHEAT_SHEET.md#jenkins)
+
+**✏️ Practice Tasks:**
+- [ ] Create declarative pipeline for Spring Boot app
+- [ ] Add testing stages (unit, integration)
+- [ ] Add security scanning (SonarQube, Snyk)
+- [ ] Configure deployment to Kubernetes
+
+**❓ Quiz:**
+- [ ] Answer 5 Jenkins [interview questions](senior-java-developer-prep/interview-questions/README.md#cicd--devops)
 
 **Key Concepts:**
-- Declarative vs Scripted
-- Pipeline stages
-- Parallel execution
-- Credentials management
+- Declarative vs Scripted pipelines
+- Pipeline stages (Build, Test, Scan, Deploy)
+- Parallel execution for faster builds
+- Credentials management (secrets, tokens)
+- Banking compliance (code quality gates, security scans)
+
+**📝 Quick Reference:** [Jenkins Pipeline Cheat Sheet](CHEAT_SHEET.md#declarative-pipeline)
 
 **Time Required:** 6-8 hours
 
 ---
 
 #### Day 38-39: GitHub Actions
-- [ ] Read: [GitHub Actions Guide](senior-java-developer-prep/cicd-devops/README.md#github-actions)
-- [ ] Practice: Create CI/CD workflow
-- [ ] Exercise: Deploy to Kubernetes from GitHub
-- [ ] Quiz: Answer 5 GitHub Actions questions
+
+**📖 Reading Materials:**
+- [ ] [GitHub Actions Guide](senior-java-developer-prep/cicd-devops/README.md#github-actions)
+- [ ] [Workflow Configuration](senior-java-developer-prep/cicd-devops/README.md)
+- [ ] [Secrets Management](senior-java-developer-prep/cicd-devops/README.md#secrets-management)
+- [ ] [Deployment Strategies](senior-java-developer-prep/cicd-devops/README.md#deployment-strategies)
+
+**✏️ Practice Tasks:**
+- [ ] Create CI/CD workflow for Spring Boot
+- [ ] Deploy to Kubernetes from GitHub Actions
+- [ ] Configure secrets management
+- [ ] Add matrix builds for multiple Java versions
+
+**❓ Quiz:**
+- [ ] Answer 5 GitHub Actions [interview questions](senior-java-developer-prep/interview-questions/README.md#cicd--devops)
 
 **Key Concepts:**
-- Workflow syntax
-- Actions marketplace
-- Secrets management
-- Matrix builds
+- Workflow syntax (on, jobs, steps)
+- Actions marketplace (pre-built actions)
+- Secrets management (GitHub Secrets)
+- Matrix builds (test multiple versions)
+- Deployment to Kubernetes
+
+**📝 Quick Reference:** [GitHub Actions Examples](senior-java-developer-prep/cicd-devops/README.md#github-actions-workflow)
 
 **Time Required:** 4-6 hours
 
 ---
 
 #### Day 40-41: Interview Questions Review
-- [ ] Read: [All Interview Questions](senior-java-developer-prep/interview-questions/README.md)
-- [ ] Practice: Answer all 55+ questions
-- [ ] Exercise: Explain concepts out loud
-- [ ] Mock interview with peer
 
-**Focus Areas:**
-- Spring Boot (10 questions)
-- API Security (10 questions)
-- Kubernetes (10 questions)
-- Java Core (10 questions)
-- Banking Domain (10 questions)
-- Scenario-based (10 questions)
+**📖 Reading Materials:**
+- [ ] [All Interview Questions](senior-java-developer-prep/interview-questions/README.md)
+- [ ] [Spring Boot Questions](senior-java-developer-prep/interview-questions/README.md#spring-boot--microservices)
+- [ ] [API Security Questions](senior-java-developer-prep/interview-questions/README.md#api-security)
+- [ ] [Kubernetes Questions](senior-java-developer-prep/interview-questions/README.md#kubernetes--openshift)
+- [ ] [Java Questions](senior-java-developer-prep/interview-questions/README.md#java-fundamentals)
+- [ ] [Banking Domain Questions](senior-java-developer-prep/interview-questions/README.md#banking-domain)
+
+**✏️ Practice Tasks:**
+- [ ] Answer all 55+ interview questions
+- [ ] Explain concepts out loud (practice articulation)
+- [ ] Write down answers to scenario-based questions
+- [ ] Practice whiteboard coding
+
+**❓ Question Categories:**
+- [ ] Spring Boot & Microservices (10 questions)
+- [ ] API Security (10 questions)
+- [ ] Kubernetes & OpenShift (10 questions)
+- [ ] Java Fundamentals (10 questions)
+- [ ] Banking Domain (10 questions)
+- [ ] CI/CD & DevOps (5 questions)
+- [ ] Scenario-Based (10 questions)
+
+**📝 Resources:**
+- [Complete Interview Q&A](senior-java-developer-prep/interview-questions/README.md)
+- [Quick Reference Cheat Sheet](CHEAT_SHEET.md)
 
 **Time Required:** 8-10 hours
 
----
-
 #### Day 42: Final Review & Mock Interview
-- [ ] Review all weak areas
+
+**📖 Review Materials:**
+- [ ] Review [all weak areas](INDEX.md)
+- [ ] Review [Cheat Sheet](CHEAT_SHEET.md) (complete)
+- [ ] Review [Common Pitfalls](README.md#common-interview-pitfalls)
+- [ ] Review [Banking Concepts](CHEAT_SHEET.md#banking-concepts)
+
+**✏️ Practice Tasks:**
 - [ ] Practice system design questions
 - [ ] Mock interview (full 60 minutes)
 - [ ] Prepare questions to ask interviewer
+- [ ] Review your resume projects
+- [ ] Practice explaining your experience
+
+**❓ Mock Interview Structure:**
+1. **Introduction** (5 min) - Tell me about yourself
+2. **Technical Questions** (30 min) - Core concepts
+3. **Coding Exercise** (15 min) - Live coding
+4. **Questions for Interviewer** (5 min)
+5. **Feedback** (5 min)
+
+**📝 Questions to Ask Interviewer:**
+- [ ] Review [Questions to Ask](senior-java-developer-prep/interview-questions/README.md#questions-to-ask-the-interviewer)
+- [ ] Prepare 3-5 thoughtful questions
+- [ ] Focus on team, technology, and growth
+
+**🎯 Final Checklist:**
+- [ ] All 6 weeks completed
+- [ ] All interview questions reviewed
+- [ ] Mini-project deployed to Kubernetes
+- [ ] CI/CD pipeline created
+- [ ] Mock interview completed
+- [ ] Ready for real interviews!
+
+**📝 Resources:**
+- [Complete Index](INDEX.md)
+- [Cheat Sheet](CHEAT_SHEET.md)
+- [Interview Questions](senior-java-developer-prep/interview-questions/README.md)
 
 **Time Required:** 4-6 hours
 
