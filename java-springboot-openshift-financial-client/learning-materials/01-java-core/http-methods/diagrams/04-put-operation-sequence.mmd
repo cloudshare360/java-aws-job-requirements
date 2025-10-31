@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant C as Client
+    participant S as Server
+    participant DB as Database
+    
+    Note over C,DB: PUT /users/123 (Idempotent, Not Safe)
+    C->>S: PUT /users/123 {"name": "John", "age": 30}
+    S->>DB: UPSERT users SET name='John', age=30 WHERE id=123
+    DB-->>S: 1 row affected
+    S-->>C: 200 OK
+    
+    Note over C,DB: Retry same PUT request
+    C->>S: PUT /users/123 {"name": "John", "age": 30}
+    S->>DB: UPSERT users SET name='John', age=30 WHERE id=123
+    DB-->>S: 0 rows affected (no change)
+    S-->>C: 200 OK (Same result)

@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant C as Client
+    participant S as Server
+    participant DB as Database
+    
+    Note over C,DB: GET /users/123 (Idempotent & Safe)
+    C->>S: GET /users/123
+    S->>DB: SELECT * FROM users WHERE id=123
+    DB-->>S: User data
+    S-->>C: 200 OK + User data
+    Note over C,DB: Multiple calls = Same result, No changes
+    
+    C->>S: GET /users/123 (Again)
+    S->>DB: SELECT * FROM users WHERE id=123
+    DB-->>S: Same user data
+    S-->>C: 200 OK + Same user data

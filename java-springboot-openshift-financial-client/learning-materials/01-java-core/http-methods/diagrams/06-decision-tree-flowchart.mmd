@@ -1,0 +1,24 @@
+flowchart TD
+    START[Need to interact with API?] --> PURPOSE{What's the purpose?}
+    
+    PURPOSE -->|Read Data| READ[Use GET]
+    PURPOSE -->|Create Resource| CREATE{Know the ID?}
+    PURPOSE -->|Update Resource| UPDATE{Full or Partial?}
+    PURPOSE -->|Delete Resource| DELETE[Use DELETE]
+    PURPOSE -->|Business Action| ACTION[Use POST]
+    
+    CREATE -->|Yes, know ID| PUT1[Use PUT /resource/id]
+    CREATE -->|No, server assigns| POST1[Use POST /resources]
+    
+    UPDATE -->|Complete replacement| PUT2[Use PUT /resource/id]
+    UPDATE -->|Partial changes| PATCH1[Use PATCH /resource/id]
+    UPDATE -->|Complex business logic| POST2[Use POST /resource/id/action]
+    
+    READ --> SAFE1[✅ Safe & Idempotent]
+    PUT1 --> IDEM1[🔄 Idempotent]
+    PUT2 --> IDEM2[🔄 Idempotent]
+    DELETE --> IDEM3[🔄 Idempotent]
+    POST1 --> NEITHER1[⚠️ Not Idempotent]
+    POST2 --> NEITHER2[⚠️ Not Idempotent]
+    PATCH1 --> NEITHER3[⚠️ Usually Not Idempotent]
+    ACTION --> NEITHER4[⚠️ Not Idempotent]

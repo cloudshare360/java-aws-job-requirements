@@ -1,0 +1,22 @@
+graph LR
+    subgraph examples ["Banking API Examples"]
+        A["👤 Get user profile<br/>GET /users/123"]
+        B["💰 Set account balance<br/>PUT /accounts/123/balance"]
+        C["💸 Transfer money<br/>POST /transfers"]
+        D["📝 Update user email<br/>PATCH /users/123"]
+        E["🗑️ Close account<br/>DELETE /accounts/123"]
+        F["📊 Generate report<br/>POST /reports/generate"]
+    end
+    
+    subgraph safety ["Safety Classification"]
+        SAFE[🔒 Safe & Idempotent]
+        IDEM[🔄 Idempotent Only]
+        NEITHER[⚠️ Neither]
+    end
+    
+    A --> SAFE
+    B --> IDEM
+    E --> IDEM
+    C --> NEITHER
+    D --> NEITHER
+    F --> NEITHER

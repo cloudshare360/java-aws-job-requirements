@@ -1,0 +1,24 @@
+graph TB
+    subgraph legend ["🎯 HTTP Methods Classification"]
+        safe_idem["🔒 SAFE & IDEMPOTENT<br/>No side effects, repeatable"]
+        only_idem["🔄 IDEMPOTENT ONLY<br/>Side effects, but repeatable"]
+        neither["⚠️ NEITHER SAFE NOR IDEMPOTENT<br/>Side effects, not repeatable"]
+    end
+    
+    subgraph methods ["HTTP Methods"]
+        GET["GET<br/>📖 Read"]
+        HEAD["HEAD<br/>📝 Metadata"]
+        OPTIONS["OPTIONS<br/>❓ Capabilities"]
+        PUT["PUT<br/>📝 Replace"]
+        DELETE["DELETE<br/>🗑️ Remove"]
+        POST["POST<br/>➕ Create/Action"]
+        PATCH["PATCH<br/>✏️ Update"]
+    end
+    
+    GET --> safe_idem
+    HEAD --> safe_idem
+    OPTIONS --> safe_idem
+    PUT --> only_idem
+    DELETE --> only_idem
+    POST --> neither
+    PATCH --> neither

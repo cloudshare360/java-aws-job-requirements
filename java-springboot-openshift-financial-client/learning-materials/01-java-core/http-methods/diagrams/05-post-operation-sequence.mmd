@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant C as Client
+    participant S as Server
+    participant DB as Database
+    
+    Note over C,DB: POST /users (Not Idempotent, Not Safe)
+    C->>S: POST /users {"name": "Jane", "age": 25}
+    S->>DB: INSERT INTO users (name, age) VALUES ('Jane', 25)
+    DB-->>S: New ID: 456
+    S-->>C: 201 Created + Location: /users/456
+    
+    Note over C,DB: Retry same POST request
+    C->>S: POST /users {"name": "Jane", "age": 25}
+    S->>DB: INSERT INTO users (name, age) VALUES ('Jane', 25)
+    DB-->>S: New ID: 457 (Different!)
+    S-->>C: 201 Created + Location: /users/457

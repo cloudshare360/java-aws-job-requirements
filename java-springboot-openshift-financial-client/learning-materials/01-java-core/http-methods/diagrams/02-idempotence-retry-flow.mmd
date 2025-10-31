@@ -1,0 +1,15 @@
+flowchart TD
+    A[Client Request] --> B{Network Issue?}
+    B -->|No| C[Server Processes]
+    B -->|Yes| D[Request Lost]
+    C --> E[Response Sent]
+    E --> F{Response Received?}
+    F -->|Yes| G[Success]
+    F -->|No| H[Client Retries]
+    H --> I{Idempotent Method?}
+    I -->|Yes| J[✅ Safe to Retry]
+    I -->|No| K[❌ Risk of Duplication]
+    J --> C
+    K --> L[Manual Investigation]
+    D --> M[Client Timeout]
+    M --> H
