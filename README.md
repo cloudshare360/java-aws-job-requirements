@@ -47,11 +47,13 @@ This repository is a **comprehensive interview preparation guide** for **Senior 
 
 ### Repository Statistics
 
-- 📄 **3,500+ lines** of comprehensive documentation
-- 💡 **55+ interview questions** with detailed answers
-- 💻 **100+ code examples** ready to run
+- 📄 **4,500+ lines** of comprehensive documentation
+- 💡 **75+ interview questions** with detailed answers
+- 💻 **150+ code examples** ready to run
 - 🏦 **Banking-specific** scenarios and use cases
 - ⏱️ **6-week study plan** for structured preparation
+- 🎓 **Complete learning materials** with progressive complexity
+- 📊 **Visual diagrams** and cheat sheets for quick reference
 
 ---
 
